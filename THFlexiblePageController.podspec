@@ -88,7 +88,7 @@ Pod::Spec.new do |s|
   #
 
   #s.source_files  = "THFlexiblePageController", "InfinitePageViewController/THFlexiblePageController/*.{h,m,swift}"
-  s.source_files  = "THFlexiblePageController/*.{h,m,swift}"
+  s.source_files  = "THFlexiblePageController/THFlexiblePageController/*.{h,m,swift}"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
