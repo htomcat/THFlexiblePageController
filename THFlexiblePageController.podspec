@@ -105,7 +105,7 @@ Pod::Spec.new do |s|
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
   s.resource_bundles = {
-    'THFlexiblePageController' => ['THFlexiblePageController/THFlexiblePageController/View/*.{xib,storyboard,lproj}']
+    'Resources' => ['THFlexiblePageController/THFlexiblePageController/View/*.{xib,storyboard,lproj}']
   }
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
