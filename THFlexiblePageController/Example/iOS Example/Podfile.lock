@@ -1,0 +1,16 @@
+PODS:
+  - THFlexiblePageController (1.0.5)
+
+DEPENDENCIES:
+  - THFlexiblePageController (from `../../../`)
+
+EXTERNAL SOURCES:
+  THFlexiblePageController:
+    :path: "../../../"
+
+SPEC CHECKSUMS:
+  THFlexiblePageController: 75f0ef5db5d44c8ec052c54742dd46b9df1a6c5d
+
+PODFILE CHECKSUM: 0de419c89f1d2f94d3dea6d0d14a5921dfef3396
+
+COCOAPODS: 1.5.0
