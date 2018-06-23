@@ -17,10 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow()
-        let test = UIViewController()
-        test.view.backgroundColor = .red
+        let test1 = UIViewController()
+        test1.view.backgroundColor = .red
+        let test2 = UIViewController()
+        test2.view.backgroundColor = .yellow
         let root = RootViewController.makeInstance()
-        root.setPages([test])
+        root.setPages([test1, test2])
         window?.rootViewController = root
         window?.makeKeyAndVisible()
         return true
