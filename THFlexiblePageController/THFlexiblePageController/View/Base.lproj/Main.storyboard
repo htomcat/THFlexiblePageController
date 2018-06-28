@@ -66,7 +66,7 @@
         <!--Upper Tab View Controller-->
         <scene sceneID="4hu-SK-Rz1">
             <objects>
-                <viewController id="FOy-D0-rQD" customClass="UpperTabViewController" customModule="Resources" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FOy-D0-rQD" customClass="UpperTabViewController" customModule="THFlexiblePageController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aSK-5x-cmw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,7 +81,7 @@
         <!--Page View Controller-->
         <scene sceneID="O45-Vv-utx">
             <objects>
-                <viewController id="6Z9-Wx-w5W" customClass="PageViewController" customModule="Resources" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6Z9-Wx-w5W" customClass="PageViewController" customModule="THFlexiblePageController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xYn-t3-APc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

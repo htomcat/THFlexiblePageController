@@ -15,7 +15,7 @@ public class RootViewController: UIViewController {
 
     public static func makeInstance() -> RootViewController {
         let podBundle = Bundle(for: RootViewController.self)
-        var bundleURL = podBundle.url(forResource: "Resources", withExtension: "bundle")
+        let bundleURL = podBundle.url(forResource: "Resources", withExtension: "bundle")
         let bundle = Bundle(url: bundleURL!)
         let vc = UIStoryboard(name: "Main", bundle: bundle).instantiateViewController(withIdentifier: "RootViewController") as! RootViewController
         return vc

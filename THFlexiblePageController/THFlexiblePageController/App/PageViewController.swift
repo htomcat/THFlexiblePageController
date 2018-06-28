@@ -8,13 +8,13 @@
 
 import UIKit
 
-class PageViewController: UIViewController {
+public class PageViewController: UIViewController {
 
     var pageViewController: UIPageViewController?
     var dataSource: CustomDatasource?
     var delegate: CustomDelegate?
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         pageViewController = UIPageViewController(transitionStyle: .scroll,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UpperTabViewController: UIViewController {
+public class UpperTabViewController: UIViewController {
 
     // MARK: - Properties
     let tabsHeight: CGFloat = 60
@@ -21,7 +21,7 @@ class UpperTabViewController: UIViewController {
     var delegate: CustomDelegate?
 
     // MARK: - View Life Cycle
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
@@ -37,7 +37,9 @@ class UpperTabViewController: UIViewController {
         layout.itemSize = CGSize(width: 100, height: tabsHeight)
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: tabsHeight), collectionViewLayout: layout)
-        let bundle = Bundle(for: TabBarCell.self)
+        let podBundle = Bundle(for: RootViewController.self)
+        let bundleURL = podBundle.url(forResource: "Resources", withExtension: "bundle")
+        let bundle = Bundle(url: bundleURL!)
         collectionView.register(UINib(nibName: "TabBarCell", bundle: bundle), forCellWithReuseIdentifier: TabBarCell.identifier)
         collectionView.dataSource = dataSource
         collectionView.delegate = delegate
