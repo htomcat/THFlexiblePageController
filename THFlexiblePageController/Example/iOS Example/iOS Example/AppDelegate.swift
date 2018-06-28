@@ -19,8 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         let test1 = UIViewController()
         test1.view.backgroundColor = .red
+        test1.title = "test1"
         let test2 = UIViewController()
         test2.view.backgroundColor = .yellow
+        test2.title = "test2"
         let root = RootViewController.makeInstance()
         root.setPages([test1, test2])
         window?.rootViewController = root
