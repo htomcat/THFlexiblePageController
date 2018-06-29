@@ -12,6 +12,7 @@ public class RootViewController: UIViewController {
 
     var dataSource: CustomDatasource?
     let delegate = CustomDelegate()
+    var config: Configuration?
 
     public static func makeInstance() -> RootViewController {
         let podBundle = Bundle(for: RootViewController.self)
@@ -21,9 +22,10 @@ public class RootViewController: UIViewController {
         return vc
     }
 
-    public func setPages(_ viewControllers: [UIViewController]) {
+    public func setPages(_ viewControllers: [UIViewController], config: Configuration? = nil) {
         let repository = PagesRepository(pages: viewControllers)
         dataSource = CustomDatasource(repository: repository)
+        self.config = config
     }
 
     // MARK: - Navigation

@@ -11,7 +11,9 @@ import UIKit
 public class UpperTabViewController: UIViewController {
 
     // MARK: - Properties
-    let tabsHeight: CGFloat = 60
+    let defaultHeight: CGFloat = 60
+    let defaultWidth: CGFloat = 100
+
     private lazy var collectionView: UICollectionView = self.initCollectionView()
     var dataSource: CustomDatasource? {
         didSet {
@@ -19,6 +21,7 @@ public class UpperTabViewController: UIViewController {
         }
     }
     var delegate: CustomDelegate?
+    var config: Configuration?
 
     // MARK: - View Life Cycle
     public override func viewDidLoad() {
@@ -34,9 +37,15 @@ public class UpperTabViewController: UIViewController {
      */
     private func initCollectionView() -> UICollectionView {
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 100, height: tabsHeight)
+        let size: CGSize
+        if let customConfig = config {
+            size = CGSize(width: customConfig.tabsWidth, height: customConfig.tabsHeight)
+        } else {
+            size = CGSize(width: defaultWidth, height: defaultHeight)
+        }
+        layout.itemSize = size
         layout.scrollDirection = .horizontal
-        let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: tabsHeight), collectionViewLayout: layout)
+        let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: size.height), collectionViewLayout: layout)
         let podBundle = Bundle(for: RootViewController.self)
         let bundleURL = podBundle.url(forResource: "Resources", withExtension: "bundle")
         let bundle = Bundle(url: bundleURL!)
