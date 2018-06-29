@@ -20,6 +20,7 @@
 		F3478E04209EA04400622329 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3478DFA209EA04400622329 /* RootViewController.swift */; };
 		F3478E05209EA04400622329 /* UpperTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3478DFB209EA04400622329 /* UpperTabViewController.swift */; };
 		F3478E06209EA04400622329 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3478DFC209EA04400622329 /* PageViewController.swift */; };
+		F3B0AA2B20E5B982004643EA /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0AA2A20E5B982004643EA /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F3478DFA209EA04400622329 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		F3478DFB209EA04400622329 /* UpperTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperTabViewController.swift; sourceTree = "<group>"; };
 		F3478DFC209EA04400622329 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		F3B0AA2A20E5B982004643EA /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				F3478DF2209EA04300622329 /* View */,
 				F3478DCC209E9FD000622329 /* THFlexiblePageController.h */,
 				F3478DCD209E9FD000622329 /* Info.plist */,
+				F3B0AA2A20E5B982004643EA /* Configuration.swift */,
 			);
 			path = THFlexiblePageController;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				F3478DFF209EA04400622329 /* CustomDatasource.swift in Sources */,
 				F3478DFD209EA04400622329 /* PagesRepository.swift in Sources */,
 				F3478E04209EA04400622329 /* RootViewController.swift in Sources */,
+				F3B0AA2B20E5B982004643EA /* Configuration.swift in Sources */,
 				F3478E03209EA04400622329 /* CustomDelegate.swift in Sources */,
 				F3478DFE209EA04400622329 /* EntityGateway.swift in Sources */,
 				F3478E00209EA04400622329 /* TabBarCell.swift in Sources */,
