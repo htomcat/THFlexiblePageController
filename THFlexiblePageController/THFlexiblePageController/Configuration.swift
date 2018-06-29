@@ -6,4 +6,7 @@
 //  Copyright © 2018年 htomcat. All rights reserved.
 //
 
-import Foundation
+public struct Configuration {
+    let tabsHeight: Int
+    let tabsWidth: Int
+}
