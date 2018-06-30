@@ -9,4 +9,5 @@
 public struct Configuration {
     let tabsHeight: Int
     let tabsWidth: Int
+    let selectedLineColor: UIColor?
 }

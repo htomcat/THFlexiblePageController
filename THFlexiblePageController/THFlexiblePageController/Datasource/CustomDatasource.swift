@@ -26,6 +26,8 @@ class CustomDatasource: NSObject, InifitePageViewDatasource {
 
     var pages: [UIViewController] = []
     var selectedIndex = 0
+    var config: Configuration?
+    let defaultSelectedLineColor = UIColor.gray
 
     init(repository: PagesRepository) {
         pages = repository.fetchPages()
@@ -47,7 +49,7 @@ extension CustomDatasource: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TabBarCell.identifier, for: indexPath) as! TabBarCell
         if indexPath.row == selectedIndex {
-            cell.selectedLine.backgroundColor = .gray
+            cell.selectedLine.backgroundColor = config?.selectedLineColor ?? defaultSelectedLineColor
         } else {
             cell.selectedLine.backgroundColor = .white
         }

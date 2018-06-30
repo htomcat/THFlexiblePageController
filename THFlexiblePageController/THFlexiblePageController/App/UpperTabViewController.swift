@@ -50,6 +50,7 @@ public class UpperTabViewController: UIViewController {
         let bundleURL = podBundle.url(forResource: "Resources", withExtension: "bundle")
         let bundle = Bundle(url: bundleURL!)
         collectionView.register(UINib(nibName: "TabBarCell", bundle: bundle), forCellWithReuseIdentifier: TabBarCell.identifier)
+        dataSource?.config = config
         collectionView.dataSource = dataSource
         collectionView.delegate = delegate
         collectionView.backgroundColor = .white
