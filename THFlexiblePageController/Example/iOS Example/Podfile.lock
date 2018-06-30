@@ -1,5 +1,5 @@
 PODS:
-  - THFlexiblePageController (1.0.5)
+  - THFlexiblePageController (1.0.6)
 
 DEPENDENCIES:
   - THFlexiblePageController (from `../../../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../../../"
 
 SPEC CHECKSUMS:
-  THFlexiblePageController: 1e4a85f966c870034ad55cd454afe9f4d0284f94
+  THFlexiblePageController: 31fcd25c63cc739576ba35195feb725257cd4fec
 
 PODFILE CHECKSUM: 0de419c89f1d2f94d3dea6d0d14a5921dfef3396
 
