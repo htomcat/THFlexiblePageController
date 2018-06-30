@@ -25,6 +25,7 @@ public class RootViewController: UIViewController {
     public func setPages(_ viewControllers: [UIViewController], config: Configuration? = nil) {
         let repository = PagesRepository(pages: viewControllers)
         dataSource = CustomDatasource(repository: repository)
+        dataSource?.config = config
         self.config = config
     }
 
@@ -35,6 +36,7 @@ public class RootViewController: UIViewController {
         switch segue.destination {
         case let vc as UpperTabViewController:
             delegate.upperTab = vc
+            vc.config = config
             vc.delegate = delegate
             vc.dataSource = dataSource
         case let vc as PageViewController:
