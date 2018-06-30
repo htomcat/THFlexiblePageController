@@ -10,4 +10,11 @@ public struct Configuration {
     let tabsHeight: Int
     let tabsWidth: Int
     let selectedLineColor: UIColor?
+
+    public init(tabsHeight: Int, tabsWidth: Int, selectedLineColor: UIColor) {
+        self.tabsHeight = tabsHeight
+        self.tabsWidth = tabsWidth
+        self.selectedLineColor = selectedLineColor
+    }
+
 }
