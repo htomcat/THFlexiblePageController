@@ -23,9 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let test2 = UIViewController()
         test2.view.backgroundColor = .yellow
         test2.title = "test2"
+        let test3 = UIViewController()
+        test3.view.backgroundColor = .blue
+        test3.title = "test2"
         let root = RootViewController.makeInstance()
-        let config = Configuration(tabsHeight: 60, tabsWidth: 500, selectedLineColor: UIColor.red)
-        root.setPages([test1, test2], config: config)
+        let config = Configuration(tabsHeight: 60, tabsWidth: 150, selectedLineColor: .black)
+        root.setPages([test1, test2, test3], config: config)
         window?.rootViewController = root
         window?.makeKeyAndVisible()
         return true
