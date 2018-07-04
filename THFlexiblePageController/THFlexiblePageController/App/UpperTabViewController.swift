@@ -53,7 +53,7 @@ public class UpperTabViewController: UIViewController {
         dataSource?.config = config
         collectionView.dataSource = dataSource
         collectionView.delegate = delegate
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = config?.backgroundColor
         collectionView.showsHorizontalScrollIndicator = false
         return collectionView
     }
