@@ -8,6 +8,18 @@
 
 import Foundation
 
-extension UIViewController {
-    
+extension UIViewController: PropertyStoring {    
+    typealias T = UIColor
+
+    private struct CustomProperties {
+        static var upperTabsColor = UIColor.white
+    }
+    var upperTabsColor: UIColor {
+        get {
+            return getAssociatedObject(&CustomProperties.upperTabsColor, defaultValue: CustomProperties.upperTabsColor)
+        }
+        set {
+            return objc_setAssociatedObject(self, &CustomProperties.upperTabsColor, newValue, .OBJC_ASSOCIATION_RETAIN)
+        }
+    }
 }

@@ -22,6 +22,7 @@
 		F3478E06209EA04400622329 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3478DFC209EA04400622329 /* PageViewController.swift */; };
 		F3B0AA2B20E5B982004643EA /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0AA2A20E5B982004643EA /* Configuration.swift */; };
 		F3E52F4820EDA68C000AD13C /* UIViewController+CustomUpperTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E52F4720EDA68C000AD13C /* UIViewController+CustomUpperTab.swift */; };
+		F3E52F4A20EDA933000AD13C /* PropertyStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E52F4920EDA933000AD13C /* PropertyStoring.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		F3478DFC209EA04400622329 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		F3B0AA2A20E5B982004643EA /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		F3E52F4720EDA68C000AD13C /* UIViewController+CustomUpperTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CustomUpperTab.swift"; sourceTree = "<group>"; };
+		F3E52F4920EDA933000AD13C /* PropertyStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyStoring.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				F3478DFA209EA04400622329 /* RootViewController.swift */,
 				F3478DFB209EA04400622329 /* UpperTabViewController.swift */,
 				F3478DFC209EA04400622329 /* PageViewController.swift */,
+				F3E52F4920EDA933000AD13C /* PropertyStoring.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3478DFF209EA04400622329 /* CustomDatasource.swift in Sources */,
+				F3E52F4A20EDA933000AD13C /* PropertyStoring.swift in Sources */,
 				F3478DFD209EA04400622329 /* PagesRepository.swift in Sources */,
 				F3478E04209EA04400622329 /* RootViewController.swift in Sources */,
 				F3B0AA2B20E5B982004643EA /* Configuration.swift in Sources */,
