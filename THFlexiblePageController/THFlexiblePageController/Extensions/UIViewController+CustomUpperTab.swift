@@ -9,12 +9,12 @@
 import Foundation
 
 extension UIViewController: PropertyStoring {    
-    typealias T = UIColor
+    public typealias T = UIColor
 
     private struct CustomProperties {
         static var upperTabsColor = UIColor.white
     }
-    var upperTabsColor: UIColor {
+    public var upperTabsColor: UIColor {
         get {
             return getAssociatedObject(&CustomProperties.upperTabsColor, defaultValue: CustomProperties.upperTabsColor)
         }
