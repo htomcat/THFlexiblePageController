@@ -20,14 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let test1 = UIViewController()
         test1.view.backgroundColor = .red
         test1.title = "test1"
+        test1.upperTabsColor = .red
         let test2 = UIViewController()
         test2.view.backgroundColor = .yellow
         test2.title = "test2"
+        test2.upperTabsColor = .yellow
         let test3 = UIViewController()
         test3.view.backgroundColor = .blue
-        test3.title = "test2"
+        test3.title = "test3"
+        test3.upperTabsColor = .blue
         let root = RootViewController.makeInstance()
-        let config = Configuration(tabsHeight: 60, tabsWidth: 150, selectedLineColor: .black, backgroundColor: .blue)
+        let config = Configuration(tabsHeight: 60, tabsWidth: 150, selectedLineColor: .black, backgroundColor: .white)
         root.setPages([test1, test2, test3], config: config)
         window?.rootViewController = root
         window?.makeKeyAndVisible()
