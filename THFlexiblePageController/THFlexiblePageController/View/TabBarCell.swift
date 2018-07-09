@@ -15,5 +15,6 @@ class TabBarCell: UICollectionViewCell {
     // MARK: - IBOutlet
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var selectedLine: UIView!
+    @IBOutlet weak var content: UIView!
     
 }

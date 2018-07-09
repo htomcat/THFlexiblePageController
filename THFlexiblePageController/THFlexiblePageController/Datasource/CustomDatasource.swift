@@ -56,7 +56,7 @@ extension CustomDatasource: UICollectionViewDataSource {
         let title = pages[indexPath.row].title
         cell.title.text = title
         let color = pages[indexPath.row].upperTabsColor
-        cell.contentView.backgroundColor = color
+        cell.content.backgroundColor = color
         return cell
     }
 }
