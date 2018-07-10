@@ -11,12 +11,14 @@ public struct Configuration {
     let tabsWidth: Int
     let selectedLineColor: UIColor?
     let backgroundColor: UIColor?
+    let hiddenSeparatedLine: Bool
 
-    public init(tabsHeight: Int, tabsWidth: Int, selectedLineColor: UIColor, backgroundColor: UIColor) {
+    public init(tabsHeight: Int, tabsWidth: Int, selectedLineColor: UIColor, backgroundColor: UIColor, hiddenSeparatedLine: Bool) {
         self.tabsHeight = tabsHeight
         self.tabsWidth = tabsWidth
         self.selectedLineColor = selectedLineColor
         self.backgroundColor = backgroundColor
+        self.hiddenSeparatedLine = hiddenSeparatedLine
     }
 
 }

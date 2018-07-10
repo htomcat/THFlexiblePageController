@@ -57,6 +57,7 @@ extension CustomDatasource: UICollectionViewDataSource {
         cell.title.text = title
         let color = pages[indexPath.row].upperTabsColor
         cell.content.backgroundColor = color
+        cell.selectedLine.isHidden = config?.hiddenSeparatedLine ?? false
         return cell
     }
 }
