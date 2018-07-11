@@ -10,6 +10,7 @@ import UIKit
 
 public class RootViewController: UIViewController {
 
+    @IBOutlet weak var tabsHeight: NSLayoutConstraint!
     var dataSource: CustomDatasource?
     let delegate = CustomDelegate()
     var config: Configuration?
@@ -27,6 +28,15 @@ public class RootViewController: UIViewController {
         dataSource = CustomDatasource(repository: repository)
         dataSource?.config = config
         self.config = config
+    }
+
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateConstraint()
+    }
+    private func updateConstraint() {
+        guard let config = config else { return }
+        tabsHeight.constant = CGFloat(config.tabsHeight)
     }
 
     // MARK: - Navigation
