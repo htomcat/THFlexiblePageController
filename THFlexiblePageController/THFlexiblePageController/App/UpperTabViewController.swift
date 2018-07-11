@@ -13,6 +13,7 @@ public class UpperTabViewController: UIViewController {
     // MARK: - Properties
     let defaultHeight: CGFloat = 60
     let defaultWidth: CGFloat = 100
+    let defaultSpace: CGFloat = 0
 
     private lazy var collectionView: UICollectionView = self.initCollectionView()
     var dataSource: CustomDatasource? {
@@ -38,13 +39,17 @@ public class UpperTabViewController: UIViewController {
     private func initCollectionView() -> UICollectionView {
         let layout = UICollectionViewFlowLayout()
         let size: CGSize
+        let spacing: CGFloat
         if let customConfig = config {
             size = CGSize(width: customConfig.tabsWidth, height: customConfig.tabsHeight)
+            spacing = customConfig.spacing
         } else {
             size = CGSize(width: defaultWidth, height: defaultHeight)
+            spacing = defaultSpace
         }
         layout.itemSize = size
         layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = spacing
         let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: size.height), collectionViewLayout: layout)
         let podBundle = Bundle(for: RootViewController.self)
         let bundleURL = podBundle.url(forResource: "Resources", withExtension: "bundle")
