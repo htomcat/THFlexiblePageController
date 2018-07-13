@@ -72,7 +72,7 @@ extension CustomDatasource: UIPageViewControllerDataSource {
         
         guard previousIndex >= 0 else { return pages.last }
         
-        guard pages.count > previousIndex else { return nil        }
+        guard pages.count > previousIndex else { return nil }
         
         return pages[previousIndex]
     }
