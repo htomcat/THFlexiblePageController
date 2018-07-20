@@ -44,5 +44,16 @@ let config = Configuration(tabsHeight: 30, tabsWidth: 100, selectedLineColor: .g
 root.setPages([test1, test2, test3, test4, test5], config: config)
 ```
 
+### Customize
+```
+Configuration(tabsHeight: 30, tabsWidth: 100, selectedLineColor: .gray, backgroundColor: .white, hiddenSeparatedLine: true, spacing: 0)
+```
+```
+let root = RootViewController.makeInstance()
+let config = Configuration(tabsHeight: 30, tabsWidth: 100, selectedLineColor: .gray, backgroundColor: .white, hiddenSeparatedLine: true, spacing: 0)
+root.setPages([test1, test2, test3, test4, test5], config: config)
+```
+
+
 ## License
 The library is available as open source under the terms of the MIT License.
